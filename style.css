@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: clip;
+}
+
+:root {
+  --primary-color: #f99fbd;
+  --secondary-color: #e7b9fc;
+  --third-color: #f99fbd;
+  --dark-color: #333;
+  --light-color: #fff;
+}
+
+/* Tags */
+body {
+  background-image: url("wallpaper-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100px);
+  color: var(--light-color);
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  height: 100vh; 
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.todolist {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    min-height: 80vh;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h1 { font-size: 2.5rem;}
+
+.inputdiv { 
+    display: flex;
+    justify-content: space-between;
+}
+#input-box {
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 70%;;
+ }
+
+ #input-box:focus {
+    outline: none;
+ }
+
+ #add-btn {
+    padding: 0.7rem 2.5rem;
+    background-color: #4A2EA1;
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--light-color);
+ }
+
+ #add-btn:hover {
+    background-color: #271F53;
+ }
+
+ #list {
+    text-align: left;
+    margin-top: 1.2rem;
+ }
+
+ #list li {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+ }
+
+ #list li .close-btn {
+    margin-left: auto;
+ }
+
+ #list input[type="checkbox"] {
+    margin-right: 1rem;
+ }
+
+ #list .close-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color:#96404a;
+    color: var(--light-color);
+    margin-left: 3rem;
+ }
+
+ @media(max-width: 450px) {
+   h1 { font-size: 1.5rem;}
+
+   .inputdiv {
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   #input-box { 
+      width: 100%;
+      margin-bottom: 1rem;
+   }
+
+   .todolist { min-width: 100%; }
+
+ }
